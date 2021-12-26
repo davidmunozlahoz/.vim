@@ -14,11 +14,8 @@ set showcmd " show the last command used in bottom bar
 set cursorline " highlight current line
 filetype indent on " load filetype-specific indent files
 
-hi clear SpellBad
-hi SpellBad cterm=bold ctermfg=Red
-
+setlocal spell spelllang=en_gb,es " set spell checking
 " correct spelling mistakes
-setlocal spell spelllang=en_gb,es
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " Plugin system (vim-plug)
@@ -28,7 +25,9 @@ call plug#begin()
 Plug 'lervag/vimtex'
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'zathura'
+" open the quickfix window; don't focus on it
 let g:vimtex_quickfix_mode = 2
+" don't open the quickfix window for warnings
 let g:vimtex_quickfix_open_on_warning = 0
 
 " set the snippets system
@@ -47,6 +46,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'morhetz/gruvbox'
 autocmd vimenter * ++nested colorscheme gruvbox
 set background=dark " setting dark mode
+" set highlighting for spelling mistakes
 au ColorScheme * hi SpellBad cterm=bold ctermfg=Red
 
 " bottom air bar
