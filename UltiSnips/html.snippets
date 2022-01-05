@@ -1,0 +1,58 @@
+snippet meta "post metadata"
+<!--
+	title: $1
+	parent: $2
+-->
+endsnippet
+
+snippet pp "paragraph" 
+<p>$1</p>
+endsnippet
+
+snippet h1 "heading 1" A
+<h1>$1</h1>
+endsnippet
+
+snippet h2 "heading 2" A
+<h2>$1</h2>
+endsnippet
+
+snippet h3 "heading 3" A
+<h3>$1</h3>
+endsnippet
+
+snippet h4 "heading 4" A
+<h4>$1</h4>
+endsnippet
+
+snippet h5 "heading 5" A
+<h5>$1</h5>
+endsnippet
+
+snippet h6 "heading 6" A
+<h6>$1</h6>
+endsnippet
+
+snippet link "link"
+<a href="$1">$2</a>
+endsnippet
+
+snippet bb "bold" A
+<b>$1</b>
+endsnippet
+
+snippet mm "emphasized" A
+<em>$1</em>
+endsnippet
+
+snippet thm "theorem"
+<b>${1:Theorem} </b><em>$2</em>
+<em>Proof. </em> $3
+endsnippet
+
+snippet sol "solution"
+[bg_collapse view="link" expand_text="Show Solution"
+collapse_text="Hide solution"]<em>Solution:</em> 
+$1
+[/bg_collapse]
+endsnippet
