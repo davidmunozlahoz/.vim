@@ -46,7 +46,7 @@ snippet mm "emphasized" A
 endsnippet
 
 snippet thm "theorem"
-<b>${1:Theorem} </b><em>$2</em>
+<b>${1:Theorem} </b><em>$2</em><br>
 <em>Proof. </em> $3
 endsnippet
 
@@ -56,3 +56,20 @@ collapse_text="Hide solution"]<em>Solution:</em>
 $1
 [/bg_collapse]
 endsnippet
+
+snippet ol "ordered list"
+<ol>
+	<li>$1</li>$2
+</ol>
+endsnippet
+
+snippet ul "unordered list"
+<ul>
+	<li>$1</li>$2
+</ul>
+endsnippet
+
+snippet li "list item"
+<li>$1</li>
+endsnippet
+
