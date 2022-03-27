@@ -37,6 +37,10 @@ Plug 'sirver/ultisnips'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+set rtp+=~/tfgfis
+set rtp+=~/tfgmat
+set rtp+=~/tam
+set rtp+=~/entrega
 
 " s modifier for surroundings
 Plug 'tpope/vim-surround'
@@ -50,11 +54,23 @@ autocmd vimenter * ++nested colorscheme gruvbox
 set background=dark " setting dark mode
 " set highlighting for spelling mistakes
 au ColorScheme * hi SpellBad cterm=bold ctermfg=Red
+let g:gruvbox_transparent_bg = 1
+autocmd VimEnter * hi Normal ctermbg=none
+
+" wal theme
+" Plug 'dylanaraps/wal.vim'
+" colorscheme wal
 
 " bottom air bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" to set the powerline aspect
+" (powerline patched fonts have to be installed)
+let g:airline_powerline_fonts = 1
+
+" distraction-free writing
+Plug 'junegunn/goyo.vim'
+
 " Initialize plugin system
 call plug#end()
-

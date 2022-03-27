@@ -235,7 +235,7 @@ snippet lr[ "left[ right]" i
 endsnippet
 
 snippet lra "leftangle rightangle" iA
-\left<${1:${VISUAL}} \right>$0
+\left< ${1:${VISUAL}} \right>$0
 endsnippet
 
 context "math()"
@@ -296,8 +296,8 @@ snippet __ "subscript" iA
 _{$1}$0
 endsnippet
 
-snippet ooo "\infty" iA
-\infty
+snippet infty "\infty" iA
+\infty 
 endsnippet
 
 snippet rij "mrij" i
@@ -374,6 +374,16 @@ snippet mcal "mathcal" iA
 endsnippet
 
 context "math()"
+snippet mbb "mathbb" iA
+\mathbb{$1}$0
+endsnippet
+
+context "math()"
+snippet mfr "mathfrak" iA
+\mathfrak{$1}$0
+endsnippet
+
+context "math()"
 snippet lll "l" iA
 \ell
 endsnippet
@@ -412,7 +422,7 @@ endsnippet
 
 priority 200
 context "math()"
-snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|pi|zeta|int)' "ln" rwA
+snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|zeta|int)' "ln" rwA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
@@ -474,7 +484,7 @@ endsnippet
 
 context "math()"
 snippet cc "subset" Ai
-\subset 
+\subseteq 
 endsnippet
 
 snippet notin "not in " iA
@@ -520,6 +530,10 @@ endsnippet
 
 snippet ZZ "Z" iA
 \Z
+endsnippet
+
+snippet CC "C" iA
+\C
 endsnippet
 
 snippet <! "normal" iA
@@ -580,172 +594,167 @@ snippet DD "D" iA
 endsnippet
 
 context "math()"
-snippet aa "alpha" A
+snippet aa "alpha" Ai
 \alpha 
 endsnippet
 
 context "math()"
-snippet bb "beta" A
+snippet bb "beta" Ai
 \beta 
 endsnippet
 
 context "math()"
-snippet gg "gamma" A
+snippet gg "gamma" Ai
 \gamma 
 endsnippet
 
 context "math()"
-snippet dd "delta" A
+snippet dd "delta" Ai
 \delta 
 endsnippet
 
 context "math()"
-snippet ee "epsilon" A
-\epsilon 
+snippet ee "epsilon" Ai
+\varepsilon 
 endsnippet
 
 context "math()"
-snippet zz "zeta" A
+snippet zz "zeta" Ai
 \zeta 
 endsnippet
 
 context "math()"
-snippet eta "eta" A
+snippet eta "eta" Ai
 \eta 
 endsnippet
 
 context "math()"
-snippet th "theta" A
+snippet th "theta" Ai
 \theta 
 endsnippet
 
 context "math()"
-snippet ii "iota" A
+snippet ii "iota" Ai
 \iota 
 endsnippet
 
 context "math()"
-snippet kk "kappa" A
+snippet kk "kappa" Ai
 \kappa 
 endsnippet
 
 context "math()"
-snippet ll "lambda" A
+snippet ll "lambda" Ai
 \lambda 
 endsnippet
 
 context "math()"
-snippet mu "mu" A
+snippet mu "mu" Ai
 \mu 
 endsnippet
 
 context "math()"
-snippet nu "nu" A
+snippet nu "nu" Ai
 \nu 
 endsnippet
 
 context "math()"
-snippet pi "pi" A
+snippet pi "pi" Ai
 \pi 
 endsnippet
 
 context "math()"
-snippet rho "rho" A
+snippet rho "rho" Ai
 \rho 
 endsnippet
 
 context "math()"
-snippet ss "sigma" A
+snippet ss "sigma" Ai
 \sigma 
 endsnippet
 
 context "math()"
-snippet tau "tau" A
+snippet tau "tau" Ai
 \tau 
 endsnippet
 
 context "math()"
-snippet uu "upsilon" A
-\upsilon 
-endsnippet
-
-context "math()"
-snippet phi "phi" A
+snippet phi "phi" Ai
 \phi 
 endsnippet
 
 context "math()"
-snippet psi "psi" A
+snippet psi "psi" Ai
 \psi 
 endsnippet
 
 context "math()"
-snippet chi "chi" A
+snippet chi "chi" Ai
 \chi 
 endsnippet
 
 context "math()"
-snippet oo "omega" A
+snippet oo "omega" Ai
 \omega 
 endsnippet
 
 context "math()"
-snippet xi "xi" A
+snippet xi "xi" Ai
 \xi 
 endsnippet
 
 context "math()"
-snippet GG "Gamma" A
+snippet GG "Gamma" Ai
 \Gamma 
 endsnippet
 
 context "math()"
-snippet DD "Delta" A
+snippet DD "Delta" Ai
 \Delta 
 endsnippet
 
 context "math()"
-snippet TH "Theta" A
+snippet TH "Theta" Ai
 \Theta 
 endsnippet
 
 context "math()"
-snippet LL "Lambda" A
+snippet LL "Lambda" Ai
 \Lambda 
 endsnippet
 
 context "math()"
-snippet PI "Pi" A
+snippet PI "Pi" Ai
 \Pi 
 endsnippet
 
 context "math()"
-snippet SS "Sigma" A
+snippet SS "Sigma" Ai
 \Sigma 
 endsnippet
 
 context "math()"
-snippet UU "Upsilon" A
+snippet UU "Upsilon" Ai
 \Upsilon 
 endsnippet
 
 context "math()"
-snippet PHI "Phi" A
+snippet PHI "Phi" Ai
 \Phi 
 endsnippet
 
 context "math()"
-snippet PSI "Psi" A
+snippet PSI "Psi" Ai
 \Psi 
 endsnippet
 
 context "math()"
-snippet OO "Omega" A
+snippet OO "Omega" Ai
 \Omega 
 endsnippet
 
 context "math()"
-snippet Xi "Xi" A
+snippet Xi "Xi" Ai
 \Xi 
 endsnippet
 
