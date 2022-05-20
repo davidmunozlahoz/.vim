@@ -2,16 +2,20 @@
 
 call plug#begin('~/.vim/plugged')
 
+" for TeX support
 Plug 'lervag/vimtex'
 
+" easy snippets
 Plug 'sirver/ultisnips'
 
 " s modifier for surroundings
 Plug 'tpope/vim-surround'
 
+" to repeat plugin maps
+Plug 'tpope/vim-repeat'
+
 " git wrapper
 Plug 'tpope/vim-fugitive'
-
 
 " bottom air bar
 Plug 'vim-airline/vim-airline'
