@@ -33,4 +33,4 @@ colorscheme everforest " colorscheme
 
 " # OTHER # "
 set history=1000 " increase undo limit
-setlocal spell spelllang=en_gb,es " set spell checking
+setlocal spelllang=en_gb,es " set spell checking
