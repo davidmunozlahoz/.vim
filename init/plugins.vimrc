@@ -23,6 +23,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 " autocmd VimEnter * hi Normal ctermbg=none
 
 " # Everforest theme # "
+au ColorScheme * hi SpellBad cterm=bold ctermfg=161 
 let g:everforest_background = 'hard'
 let g:everforest_better_performance = 1
 let g:everforest_transparent_background = 1
