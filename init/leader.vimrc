@@ -18,3 +18,6 @@ map <leader>ba :bufdo bd<cr>
 
 " commenting
 map <leader>c gcc
+
+" clear search highlight
+map <leader>h :noh<CR>
