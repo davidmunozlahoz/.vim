@@ -27,6 +27,9 @@ Plug 'junegunn/goyo.vim'
 " for personal note-taking
 Plug 'vimwiki/vimwiki'
 
+" to comment out lines
+Plug 'tpope/vim-commentary'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'dylanaraps/wal.vim'

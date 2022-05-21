@@ -15,3 +15,6 @@ map <leader>k :bp<cr>
 map <leader>d :bd<cr>
 map <leader>w :w<cr>
 map <leader>ba :bufdo bd<cr>
+
+" commenting
+map <leader>c gcc
