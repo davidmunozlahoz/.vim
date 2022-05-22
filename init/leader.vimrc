@@ -24,3 +24,6 @@ map <silent> <leader>h :noh<CR>
 
 " toggle bottom bar
 map <leader>bh :call ToggleHiddenBottom()<CR>
+
+" content formatting
+map <leader>f gq
