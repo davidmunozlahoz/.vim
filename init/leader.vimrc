@@ -20,4 +20,4 @@ map <leader>ba :bufdo bd<cr>
 map <leader>c gcc
 
 " clear search highlight
-map <leader>h :noh<CR>
+map <silent> <leader>h :noh<CR>
