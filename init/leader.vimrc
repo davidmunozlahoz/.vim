@@ -21,3 +21,6 @@ map <leader>c gcc
 
 " clear search highlight
 map <silent> <leader>h :noh<CR>
+
+" toggle bottom bar
+map <leader>bh :call ToggleHiddenBottom()<CR>
