@@ -1,6 +1,7 @@
 " $HOME/.vim/init/leader.vimrc
 
 let mapleader = ' '
+let maplocalleader = ' '
 
 " spelling
 map <leader>ss :setlocal spell!<cr>
