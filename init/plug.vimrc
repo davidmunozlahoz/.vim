@@ -30,6 +30,9 @@ Plug 'vimwiki/vimwiki'
 " to comment out lines
 Plug 'tpope/vim-commentary'
 
+" to enhance the directory browser
+Plug 'tpope/vim-vinegar'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'dylanaraps/wal.vim'

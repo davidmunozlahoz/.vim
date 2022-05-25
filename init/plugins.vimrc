@@ -48,3 +48,7 @@ let g:airline_symbols.colnr = ' C:'
 " use markdown syntax
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
+
+" # vim-vinegar # "
+" hide dot files
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
