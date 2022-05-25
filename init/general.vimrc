@@ -32,5 +32,6 @@ set background=dark " dark background
 colorscheme everforest " colorscheme
 
 " # OTHER # "
+set autowrite " automatically save when leaving file
 set history=1000 " increase undo limit
 setlocal spelllang=en_gb,es " set spell checking
