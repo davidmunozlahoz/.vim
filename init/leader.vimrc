@@ -14,7 +14,7 @@ map <leader>sc z=
 map <leader>j :bn<cr>
 map <leader>k :bp<cr>
 map <leader>d :bd<cr>
-map <leader>w :w<cr>
+map <silent> <leader>w :silent w<cr>
 map <leader>ba :bufdo bd<cr>
 
 " commenting
