@@ -22,7 +22,7 @@ set so=10 " lines below the cursor when scrolling
 set lazyredraw " don't redraw when running macros
 
 " # APPEARANCE # "
-set textwidth=60 " limit lines to 60 characters
+set textwidth=70 " limit lines to 70 characters
 set number " show line numbers
 set relativenumber " show relative line numbers
 set showcmd " show the last command used in bottom bar
