@@ -31,6 +31,11 @@ set termguicolors " termguicolors enabled
 set background=dark " dark background
 colorscheme everforest " colorscheme
 
+" to have colors in alacritty
+if &term == "alacritty"        
+    let &term = "xterm-256color"
+endif
+
 " # OTHER # "
 set autowrite " automatically save when leaving file
 set history=1000 " increase undo limit
