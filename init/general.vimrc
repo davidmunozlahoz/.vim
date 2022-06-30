@@ -40,3 +40,4 @@ endif
 set autowrite " automatically save when leaving file
 set history=1000 " increase undo limit
 setlocal spelllang=en_gb,es " set spell checking
+set viminfofile=~/.cache/viminfo
