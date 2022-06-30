@@ -40,4 +40,5 @@ endif
 set autowrite " automatically save when leaving file
 set history=1000 " increase undo limit
 setlocal spelllang=en_gb,es " set spell checking
-set viminfofile=~/.cache/viminfo
+set viminfofile=~/.cache/viminfo " to move the viminfo file
+set clipboard=unnamed " system clipboard register +
