@@ -46,7 +46,7 @@ let g:airline_symbols.colnr = ' C:'
 " # VimWiki # "
 
 " use markdown syntax
-let g:vimwiki_list = [{'path': '~/vimwiki/',
+let g:vimwiki_list = [{'path': '~/dox/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " # vim-vinegar # "
