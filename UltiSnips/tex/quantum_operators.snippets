@@ -1,0 +1,34 @@
+global !p
+def math():
+	return vim.eval('vimtex#syntax#in_mathzone()') == '1'
+endglobal
+
+context "math()"
+snippet bk "braket" -iA
+\braket{$1}{$2}
+endsnippet
+
+context "math()"
+snippet kb "ketbra" -iA
+\ketbra{$1}{$2}
+endsnippet
+
+context "math()"
+snippet ket "ket" -iA
+\ket{$1}
+endsnippet
+
+context "math()"
+snippet bra "bra" -iA
+\bra{$1}
+endsnippet
+
+context "math()"
+snippet me "matrix element" -i
+\matrixel{$1}{$2}{$3}
+endsnippet
+
+context "math()"
+snippet dg "dagger" -iA
+^\dagger
+endsnippet

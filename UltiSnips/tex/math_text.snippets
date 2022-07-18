@@ -1,0 +1,69 @@
+### MATH TEXT SNIPPETS ###
+
+global !p
+def math():
+	return vim.eval('vimtex#syntax#in_mathzone()') == '1'
+endglobal
+
+# rm 	-> \mathrm{}
+# xrm -> \mathrm{x}
+context "math()"
+snippet "(\w*)rm" "Upright Roman Font" r
+\mathrm{${1:`!p snip.rv = match.group(1)`}}$0
+endsnippet
+
+# bb 	-> \mathbb{}
+# xbb -> \mathbb{x}
+context "math()"
+snippet "(\w*)bb" "Blank Bold Font" r
+\mathbb{${1:`!p snip.rv = match.group(1)`}}$0
+endsnippet
+
+# cal  -> \mathcal{}
+# xcal -> \mathcal{x}
+context "math()"
+snippet "(\w*)cal" "Calligraphic Font" r
+\mathcal{${1:`!p snip.rv = match.group(1)`}}$0
+endsnippet
+
+# frak  -> \mathfrak{}
+# xfrak -> \mathfrak{x}
+context "math()"
+snippet "(\w*)frak" "Fraktur Font" r
+\mathfrak{${1:`!p snip.rv = match.group(1)`}}$0
+endsnippet
+
+context "math()"
+snippet tt "text" iA
+\text{$1}$0
+endsnippet
+
+snippet NN "n" iA
+\N
+endsnippet
+
+snippet RR "real" iA
+\R
+endsnippet
+
+snippet QQ "Q" iA
+\Q
+endsnippet
+
+snippet ZZ "Z" iA
+\Z
+endsnippet
+
+snippet CC "C" iA
+\C
+endsnippet
+
+context "math()"
+snippet HH "H" iA
+\mathbb{H}
+endsnippet
+
+context "math()"
+snippet DD "D" iA
+\mathbb{D}
+endsnippet

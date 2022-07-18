@@ -1,0 +1,56 @@
+### SYMBOLS SNIPPETS ###
+
+global !p
+def math():
+	return vim.eval('vimtex#syntax#in_mathzone()') == '1'
+endglobal
+
+snippet ... "ldots" iA
+\ldots
+endsnippet
+
+context "math()"
+snippet -. "Center Dot" Ai
+\cdot 
+endsnippet
+
+context "math()"
+snippet infty "\infty" iA
+\infty 
+endsnippet
+
+context "math()"
+snippet EE "geq" iA
+\exists 
+endsnippet
+
+context "math()"
+snippet AA "forall" iA
+\forall 
+endsnippet
+
+context "math()"
+snippet lll "l" iA
+\ell
+endsnippet
+
+context "math()"
+snippet nabl "nabla" iA
+\nabla 
+endsnippet
+
+context "math()"
+snippet norm "norm" iA
+\|$1\|$0
+endsnippet
+
+snippet OO "emptyset" iA
+\O
+endsnippet
+
+context "math()"
+snippet "\\?\b(circ|perp)" "Common Function" Ar
+`!p
+snip.rv = '\\' + match.group(1)
+`
+endsnippet

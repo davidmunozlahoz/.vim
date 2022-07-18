@@ -1,0 +1,33 @@
+### OTHER SNIPPETS ###
+
+global !p
+def math():
+	return vim.eval('vimtex#syntax#in_mathzone()') == '1'
+endglobal
+
+context "math()"
+snippet set "set" wA
+\\{\\, $1 \\mid $2 \\, \\} $0
+endsnippet
+
+snippet SI "SI" iA
+\SI{$1}{$2}
+endsnippet
+
+context "math()"
+snippet boxed "Box" w
+\boxed{${1:${VISUAL}}}$0
+endsnippet
+
+context "math()"
+snippet qd "Space" Ai
+\quad
+endsnippet
+
+snippet ref "Reference" wi
+\ref{${1:fig}:$2}$0
+endsnippet
+
+snippet itm "New Item" A
+\item ${VISUAL}$1
+endsnippet

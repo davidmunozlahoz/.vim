@@ -1,0 +1,46 @@
+### ENVIRONMENTS SNIPPETS ###
+
+snippet beg "begin{} / end{}" bA
+\begin{$1}
+	${VISUAL}$0
+\end{$1}
+endsnippet
+
+snippet tab "Table environment" bAi
+\begin{table}[${1:htpb}]
+	\centering
+	\caption{${2:caption}}
+	\label{tab:${3:label}}
+	\begin{tabular}{${5:c}}
+	$0${5/((?<=.)c|l|r)|./(?1: & )/g}
+	\end{tabular}
+\end{table}
+endsnippet
+
+snippet fig "Figure environment" bAi
+\begin{figure}[${1:htpb}]
+	\centering
+	\includegraphics[width=${2:0.8}\textwidth]{images/$3.${4:png}}
+	\caption{$5}
+	\label{fig:${6:$3}}
+\end{figure}
+endsnippet
+
+
+snippet enum "Enumerate" bAi
+\begin{enumerate}
+	\item $0
+\end{enumerate}
+endsnippet
+
+snippet item "Itemize" bA
+\begin{itemize}
+	\item $0
+\end{itemize}
+endsnippet
+
+snippet desc "Description" bAi
+\begin{description}
+	\item[$1] $0
+\end{description}
+endsnippet

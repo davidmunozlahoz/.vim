@@ -1,0 +1,59 @@
+### BASE SNIPPETS ###
+
+snippet prea "Basic preamble" b
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+
+\title{$1}
+\author{$2}
+\date{${3:\\today}}
+
+\begin{document}
+
+\maketitle
+
+$0
+\end{document}
+endsnippet
+
+snippet mathprea "Basic math preamble"
+% Math stuff
+\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+
+% Bold math
+\usepackage{bm}
+
+% Some shortcuts
+\newcommand\N{\ensuremath{\mathbb{N}}}
+\newcommand\R{\ensuremath{\mathbb{R}}}
+\newcommand\Z{\ensuremath{\mathbb{Z}}}
+\renewcommand\O{\ensuremath{\emptyset}}
+\newcommand\Q{\ensuremath{\mathbb{Q}}}
+\newcommand\C{\ensuremath{\mathbb{C}}}
+endsnippet
+
+snippet tex "TeX logo"
+\TeX{}
+endsnippet
+
+snippet latex "LaTeX logo"
+\LaTeX{}
+endsnippet
+
+snippet pac "Package" b
+\usepackage[${1:options}]{${2:package}}
+endsnippet
+
+snippet mk "Inline Math" wA
+$${1}$
+endsnippet
+
+snippet dm "Display Math" wA
+\[
+${1:${VISUAL}}
+\]
+endsnippet

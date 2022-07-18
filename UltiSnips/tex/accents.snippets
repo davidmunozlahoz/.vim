@@ -1,0 +1,45 @@
+### ACCENTS SNIPPETS ###
+
+global !p
+def math():
+	return vim.eval('vimtex#syntax#in_mathzone()') == '1'
+endglobal
+
+priority 10
+context "math()"
+snippet "bar" "wide bar" riA
+\overline{$1}$0
+endsnippet
+
+# xbar -> \bar{x}
+priority 100
+context "math()"
+snippet "([a-zA-Z])bar" "bar" riA
+\bar{`!p snip.rv=match.group(1)`}
+endsnippet
+
+priority 10
+context "math()"
+snippet "hat" "wide hat" riA
+\widehat{$1}$0
+endsnippet
+
+# xhat -> \hat{x}
+priority 100
+context "math()"
+snippet "([a-zA-Z])hat" "hat" riA
+\hat{`!p snip.rv=match.group(1)`}
+endsnippet
+
+priority 10
+context "math()"
+snippet "vec" "wide vec" riA
+\overrightarrow{$1}$0
+endsnippet
+
+# xvec -> \vec{x}
+priority 100
+context "math()"
+snippet "([a-zA-Z])vec" "vec" riA
+\vec{`!p snip.rv=match.group(1)`}
+endsnippet
